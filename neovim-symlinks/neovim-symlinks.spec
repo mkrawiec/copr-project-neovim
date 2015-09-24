@@ -8,6 +8,7 @@ Url:            https://github.com/mkrawiec/copr-project-neovim
 BuildArch:      noarch
 Requires:       neovim
 Conflicts:      otherproviders(vim)
+Conflicts:      otherproviders(vi)
 Provides:       vim
 Provides:       vi
 
