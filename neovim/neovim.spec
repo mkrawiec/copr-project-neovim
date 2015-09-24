@@ -7,6 +7,7 @@ Url:            http://neovim.org/
 Group:          Productivity/Editors/Vi
 Source0:        %{name}-%{version}.tar.gz
 
+BuildRequires:  gettext
 BuildRequires:  gcc
 BuildRequires:  cmake
 BuildRequires:  ncurses-devel
