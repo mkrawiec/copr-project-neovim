@@ -26,16 +26,6 @@ The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
 
 
-%package devel-doc
-Summary:        Development files for %{name}
-Group:          Development/Libraries
-Requires:       %{name} = %{version}-%{release}
-BuildArch:      noarch
-
-%description devel-doc
-This package contains API documentation for %{name}.
-
-
 %prep
 %setup -q
 
