@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+X-SuSE-translate=true
+GenericName=Text Editor
+Name=Neovim Qt
+MimeType=text/plain;
+Exec=nvim-qt %U
+X-KDE-StartupNotify=true
+Icon=neovim-qt
+Type=Application
+Terminal=false
+Categories=Qt;Utility;TextEditor;
