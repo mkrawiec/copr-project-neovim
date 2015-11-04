@@ -1,6 +1,6 @@
 Name:           libtermkey
 Summary:        Library for easy processing of keyboard entry from terminal-based programs
-Version: 0.0.0.20150924git90264a
+Version: 0.0.0.20151104git15e0de
 Release:        1%{?dist}
 License:        MIT
 Group:          System Environment/Libraries
