@@ -9,6 +9,8 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  gettext
 BuildRequires:  gcc
+# For luarocks
+BuildRequires:  git
 BuildRequires:  cmake
 BuildRequires:  ncurses-devel
 BuildRequires:  make
