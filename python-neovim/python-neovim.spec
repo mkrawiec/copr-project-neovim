@@ -2,7 +2,7 @@
 
 %global pypiname neovim
 Name:           python-neovim
-Version: 0.0.38
+Version: 0.1.0
 Release:        1%{?dist}
 Summary:        Python client for Neovim
 
