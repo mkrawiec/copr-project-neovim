@@ -1,5 +1,5 @@
-PKG_VERSION=0.0.0.$(date +%Y%m%d)git0280ff
-PKG_DOWNLOAD_URL=https://github.com/equalsraf/neovim-qt/archive/staging.tar.gz
+PKG_VERSION=0.1.1
+PKG_DOWNLOAD_URL=https://github.com/equalsraf/neovim-qt/archive/v${PKG_VERSION}.tar.gz
 
 pkg_prebuild_hook()
 {

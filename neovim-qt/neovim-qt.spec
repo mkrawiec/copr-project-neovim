@@ -1,5 +1,5 @@
 Name:           neovim-qt
-Version: 0.0.0.20151104git0280ff
+Version: 0.1.1
 Release:        1%{?dist}
 Summary:        Neovim RPC and GUI using Qt5
 
