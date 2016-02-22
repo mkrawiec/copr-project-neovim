@@ -2,7 +2,7 @@
 
 Name:           libvterm
 Summary:        An abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator
-Version: 0.0.0.20151121git04781d
+Version: 0.0.0.20160222gita9c7c6
 Release:        1%{?dist}
 License:        MIT
 Group:          System Environment/Libraries
