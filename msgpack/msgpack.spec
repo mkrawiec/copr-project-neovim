@@ -1,5 +1,5 @@
 Name:		msgpack
-Version: 1.2.0
+Version: 1.4.0
 Release:	1%{?dist}
 Summary:	Binary-based efficient object serialization library
 Group:		System Environment/Libraries
@@ -54,7 +54,8 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f '{}' ';'
 
 
 %files
-%doc AUTHORS COPYING ChangeLog LICENSE NOTICE README README.md
+%doc CHANGELOG.md COPYING NOTICE README.md
+%license LICENSE_1_0.txt
 %{_libdir}/*.so.*
 
 %files devel
