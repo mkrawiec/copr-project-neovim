@@ -1,10 +1,9 @@
 Name:           neovim
-Version: 0.1.1
+Version: 0.1.2
 Release:        1%{?dist}
 License:        Vim
 Summary:        Vim's rebirth for the 21st century
 Url:            http://neovim.org/
-Group:          Productivity/Editors/Vi
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  gettext
