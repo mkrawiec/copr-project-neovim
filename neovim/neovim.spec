@@ -1,5 +1,5 @@
 Name:           neovim
-Version: 0.1.2
+Version: 0.1.3
 Release:        1%{?dist}
 License:        Vim
 Summary:        Vim's rebirth for the 21st century
@@ -7,7 +7,6 @@ Url:            http://neovim.org/
 Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  gettext
-BuildRequires:  gcc
 # For luarocks
 BuildRequires:  git
 BuildRequires:  cmake
@@ -17,6 +16,7 @@ BuildRequires:  autoconf
 BuildRequires:  automake
 BuildRequires:  libtool
 BuildRequires:  gcc-c++
+BuildRequires:  jemalloc-devel
 #BuildRequires:  libuv-devel
 #BuildRequires:  luajit-devel
 #BuildRequires:  lua-devel
@@ -59,7 +59,9 @@ popd
 mkdir build
 pushd build
 %cmake .. \
-    -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+    -DENABLE_JEMALLOC=ON
+
 make %{?_smp_mflags}
 popd
 
