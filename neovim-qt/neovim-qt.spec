@@ -1,12 +1,11 @@
 Name:           neovim-qt
 Version: 0.1.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Neovim RPC and GUI using Qt5
 
 License:        ISC
 Url:            https://github.com/equalsraf/neovim-qt
 Source0:        %{name}-%{version}.tar.gz
-Source1:        %{name}.desktop
 
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
@@ -34,8 +33,8 @@ make %{?_smp_mflags}
 
 %install
 install -D -m 0755 build/bin/nvim-qt %{buildroot}%{_bindir}/nvim-qt
-install -D -m 0644 third-party/neovim.png %{buildroot}%{_datadir}/pixmaps/neovim-qt.png
-install -D -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/neovim-qt.desktop
+install -D -m 0644 third-party/neovim.png %{buildroot}%{_datadir}/pixmaps/nvim-qt.png
+install -D -m 0644 src/gui/nvim-qt.desktop %{buildroot}%{_datadir}/applications/nvim-qt.desktop
 
 %post
 /usr/bin/update-desktop-database &> /dev/null || :
@@ -46,7 +45,7 @@ install -D -m 0644 %{SOURCE1} %{buildroot}%{_datadir}/applications/neovim-qt.des
 %files
 %defattr(-,root,root)
 %{_bindir}/nvim-qt
-%{_datadir}/applications/neovim-qt.desktop
-%{_datadir}/pixmaps/neovim-qt.png
+%{_datadir}/applications/nvim-qt.desktop
+%{_datadir}/pixmaps/nvim-qt.png
 
 %changelog
