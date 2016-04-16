@@ -1,5 +1,5 @@
 Name:		msgpack
-Version: 1.4.0
+Version: 1.4.1
 Release:	1%{?dist}
 Summary:	Binary-based efficient object serialization library
 Group:		System Environment/Libraries
