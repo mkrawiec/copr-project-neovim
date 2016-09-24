@@ -1,5 +1,5 @@
 Name:           neovim
-Version: 0.1.4
+Version: 0.1.5
 Release:        1%{?dist}
 License:        Vim
 Summary:        Vim's rebirth for the 21st century
